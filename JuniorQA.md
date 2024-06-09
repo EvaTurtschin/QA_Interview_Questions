@@ -2,6 +2,7 @@
 
 ## **Тестирование**
 *Тестирование ПО (Software Testing)* - проверка соответствия между реальным и ожидаемым поведением программы, осуществляемая на конечном наборе тестов, выбранном определенным образом.
+Software Testing is the process of verifying the correspondence between the actual and expected behavior of a program, conducted on a specific set of tests chosen in a particular manner.
 
 
 ## **Пирамида тестирования**
@@ -9,101 +10,124 @@
 
 
 ## **Зачем тестировать ПО**
-*Цели тестирования*:
+*Цели тестирования*:  Testing Goals:
 * Повысить вероятность того, что приложение, будет работать правильно при любых обстоятельствах.
 * Повысить вероятность того, что приложение, будет соответствовать всем описанным требованиям.
 * Предоставление актуальной информации о состоянии продукта на данный момент.
 
+Increase the likelihood that the application will function correctly under all circumstances.
+Increase the likelihood that the application will meet all specified requirements.
+Provide up-to-date information about the current state of the product.
 
 ## **Этапы тестирования**
-*Этапы*:
-1. Анализ продукта
-2. Работа с требованиями
-3. Разработка стратегии тестирования
-и планирование процедур контроля качества
-4. Создание тестовой документации
-5. Тестирование прототипа
-6. Основное тестирование
-7. Стабилизация
-8. Эксплуатация
+*Этапы*: Stages:
+1. Анализ продукта  Product Analysis
+2. Работа с требованиями Working with Requirements
+3. Разработка стратегии тестирования  Developing a Testing Strategy and Planning Quality Control Procedures
+и планирование процедур контроля качества  Creating Test Documentation
+4. Создание тестовой документации  Creating Test Documentation
+5. Тестирование прототипа  Prototype Testing
+6. Основное тестирование  Main Testing
+7. Стабилизация  Stabilization
+8. Эксплуатация  Operation
 
 
-## **Типы тестирования**
-*По целям*:
-* Безопасности
-* Функциональное
-* Нефункциональное
+## **Типы тестирования** Types of Testing
+*По целям*: By Purpose:
+* Безопасности Security
+* Функциональное Functional
+* Нефункциональное Non-functional
   * UI
-  * Совместимости
-  * Производительности
-    * Нагрузочное
-    * Стабильности
-    * Стресс
+  * Совместимости Compatibility
+  * Производительности Performance
+    * Нагрузочное Load
+    * Стабильности Stability
+    * Стресс Stress
 
-*По знанию системы*:
-* Белый ящик
-* Серый ящик
-* Чёрный ящик
+*По знанию системы*:  By Knowledge of the System:
+* Белый ящик White-box
+* Серый ящик Gray-box
+* Чёрный ящик Black-box
 
-*По хронологии выполнения*:
-* Входное (Smoke/intake)
-* Повторное
-* Регрессионное
+*По хронологии выполнения*:  By Execution Chronology:
+* Входное (Smoke/intake) 
+* Повторное Retesting
+* Регрессионное  Regression
 
-*По степени автомтизации*
+*По степени автомтизации* By Degree of Automation
 
-*По исполнению кода*
+*По исполнению кода*  By Code Execution
 
 
-## **Уровни тестирования**
+## **Уровни тестирования**  Levels of Testing
 * *Модульное/Компонентное* (unit/component testing)* - тестирование наименьших элементов ПО, которые могут быть протестированы по-отдельности (модули, объекты, классы, функции).  
 Задача модульного тестирования - выявление локализованных в модуле ошибок реализации алгоритмов, а также определение степени готовности системы к переходу на следующий уровень разработки и тестирования.
+Unit/Component Testing - testing the smallest elements of software that can be tested independently (modules, objects, classes, functions).
+The goal of unit testing is to identify localized errors in the module's algorithm implementations and to determine the readiness of the system to proceed to the next level of development and testing.
 
 * *Интеграционное (integration testing)* - тестирование части системы, состоящей из двух и более модулей.  
 Задача интеграционного тестирования - поиск дефектов, связанных с ошибками реализации и интерпретации интерфейсного взаимодействия между модулями, а также ошибок взаимодействия с другими частями системы (ОС, оборудованием).
+Integration Testing - testing parts of the system consisting of two or more modules.
+The goal of integration testing is to find defects related to implementation and interpretation errors in the interface interactions between modules, as well as errors in interactions with other parts of the system (OS, hardware).
 
 * *Системное (system testing)* - процесс тестирования системы в целом с целью проверки того, что она соответствует установленным требованиям.  
 Задача системного тестирования - выявление дефектов, связанных с общей работой системы, таких как неверное использование ресурсов системы, непредусмотренные комбинации данных пользовательского уровня, несовместимость с окружением, непредусмотренные сценарии использования, отсутствующая или неверная функциональность, неудобство в применении и т.д.
+System Testing - the process of testing the entire system to verify that it meets the established requirements.
+The goal of system testing is to identify defects related to the overall operation of the system, such as incorrect resource usage, unforeseen combinations of user-level data, incompatibility with the environment, unanticipated usage scenarios, missing or incorrect functionality, usability issues, and so on.
 
 * *Приёмочное (acceptance testing)* - формальный процесс тестирования, который проверяет соответствие системы потребностям, требованиям и бизнес процессам пользователя, и проводится для вынесения решения заказчиком (внутренним или внешним) или другим уполномоченным лицом принимается приложение или нет.
+* Acceptance Testing - a formal testing process that verifies the system's compliance with user needs, requirements, and business processes. It is conducted to make a decision on whether the application is accepted by the customer (internal or external) or other authorized parties.
 
 
-## **Техники тест-дизайна**
+## **Техники тест-дизайна** Test Design Techniques
 * *Эквивалентное Разделение/Классы эквивалентности (Equivalence Partitioning — EP)*. Как пример, у вас есть диапазон допустимых значений от 1 до 10, вы должны выбрать одно верное значение внутри интервала, скажем, 5, и одно неверное значение вне интервала — 0, получив таким образом два значения относящиеся к разным классам.
+Equivalence Partitioning (EP). For example, if you have a range of valid values from 1 to 10, you should choose one valid value within the range, say 5, and one invalid value outside the range, such as 0, thus obtaining two values belonging to different classes. 
 
 * *Анализ Граничных Значений (Boundary Value Analysis — BVA)*. Если взять пример выше, в качестве значений для позитивного тестирования выберем минимальную и максимальную границы (1 и 10), и значения больше и меньше границ (0 и 11). Анализ Граничный значений может быть применен к полям, записям, файлам, или к любого рода сущностям имеющим ограничения.  
 *Ценность: ошибки часто встречаются как раз на границах разных групп значений*.
+Boundary Value Analysis (BVA). Using the example above, for positive testing, you would choose the minimum and maximum boundaries (1 and 10), and values just beyond the boundaries (0 and 11). Boundary Value Analysis can be applied to fields, records, files, or any entities with limitations.
+Value: Errors often occur at the boundaries of different value groups.
 
 * *Попарное тестирование (Pairwise Testing)* — техника формирования наборов тестовых данных. Сформулировать суть можно так: формирование таких наборов данных, в которых каждое тестируемое значение каждого из проверяемых параметров хотя бы единожды сочетается с каждым тестируемым значением всех остальных проверяемых параметров.
+Pairwise Testing - a technique for forming sets of test data. It can be summarized as forming such sets of data where each test value of each parameter under test is paired at least once with each test value of all other parameters under test.
 
 * *Причина/Следствие (Cause/Effect — CE)*. Это, как правило, ввод комбинаций условий (Причин), для получения ответа от системы (Следствие). Например, вы проверяете возможность добавлять клиента, используя определенную экранную форму. Для этого вам необходимо будет ввести несколько полей, таких как «Имя», «Адрес», «Номер Телефона» а затем, нажать кнопку «Добавить» — это «Причина». После нажатия кнопки «Добавить», система добавляет клиента в базу данных и показывает его номер на экране — это «Следствие».
+Cause/Effect (CE). This typically involves inputting combinations of conditions (Causes) to get a response from the system (Effect). For example, you are testing the ability to add a client using a specific screen form. You need to enter several fields, such as "Name", "Address", "Phone Number", and then click the "Add" button — this is the "Cause". After clicking "Add", the system adds the client to the database and shows their number on the screen — this is the "Effect".
 
 * *Предугадывание ошибки (Error Guessing — EG)*. Это когда тестировщик использует свои знания системы и способность к интерпретации спецификации на предмет того, чтобы «предугадать» при каких входных условиях система может выдать ошибку. Например, спецификация говорит: «пользователь должен ввести код». Тестировщик будет думать: «Что, если я не введу код?», «Что, если я введу неправильный код? », и так далее. Это и есть предугадывание ошибки.
+Error Guessing (EG). This is when the tester uses their knowledge of the system and the ability to interpret the specification to "guess" under what input conditions the system might produce an error. For example, the specification says: "the user must enter a code." The tester will think: "What if I don't enter a code?", "What if I enter the wrong code?", and so on. This is error guessing.
 
 * *Исчерпывающее тестирование (Exhaustive Testing — ET)* — крайний случай. В пределах этой техники вы должны проверить все возможные комбинации входных значений, и в принципе, это должно найти все проблемы. На практике применение этого метода не представляется возможным, из-за огромного количества входных значений.
+Exhaustive Testing (ET) - the extreme case. With this technique, you must test all possible combinations of input values, and in principle, this should find all problems. In practice, using this method is not feasible due to the enormous number of input values.
 
 
 ## **Что такое Regression и Confirmation тестирование, какая между ними разница**
 *Повторное/Подтверждающее тестирование (re-testing/confirmation testing)* - тестирование, во время которого исполняются тестовые сценарии, выявившие ошибки во время последнего запуска, для подтверждения успешности исправления этих ошибок.
+Re-testing/Confirmation Testing - testing during which test scenarios that identified errors during the last run are executed to confirm the successful correction of these errors.
 
 *Регрессионное тестирование (regression testing)* - тестирование уже протестированной программы после модификации для уверенности в том, что процесс модификации не внес или не активизировал ошибки в областях, не подвергавшихся изменениям. Проводится после изменений в коде ПО или его окружения.
+Regression Testing - testing of a previously tested program after modification to ensure that the modification process did not introduce or activate errors in areas that were not changed. It is conducted after changes in the software code or its environment.
 
 
 ## **Частота регрессионного тестирования**
 Стоит делать по возможности и в зависимости от частоты вмешательства в релизы.
+Frequency of Regression Testing
+It should be done as much as possible and depending on the frequency of interventions in the releases.
 
-
-## **Виды интеграционного тестирования**
+## **Виды интеграционного тестирования**  Types of Integration Testing**
 * *Снизу вверх (Bottom Up Integration)*. Все низкоуровневые модули, процедуры или функции собираются воедино и затем тестируются. После чего собирается следующий уровень модулей для проведения интеграционного тестирования. Данный подход считается полезным, если все или практически все модули, разрабатываемого уровня, готовы. Также данный подход помогает определить по результатам тестирования уровень готовности приложения.
+Bottom Up Integration. All low-level modules, procedures, or functions are combined and then tested. After that, the next level of modules is integrated for testing. This approach is considered useful if all or almost all modules of the current development level are ready. It also helps determine the application's readiness level based on the test results.
 
 * *Сверху вниз (Top Down Integration)*. Вначале тестируются все высокоуровневые модули, и постепенно один за другим добавляются низкоуровневые. Все модули более низкого уровня симулируются заглушками с аналогичной функциональностью, затем по мере готовности они заменяются реальными активными компонентами. Таким образом мы проводим тестирование сверху вниз.
+Top Down Integration. Initially, all high-level modules are tested, and then lower-level modules are gradually added one by one. All lower-level modules are simulated with stubs of similar functionality, which are replaced by real active components as they become ready. Thus, we perform testing from top to bottom.
 
 * *Большой взрыв («Big Bang» Integration)*. Все или практически все разработанные модули собираются вместе в виде законченной системы или ее основной части, и затем проводится интеграционное тестирование. Такой подход очень хорош для сохранения времени. Однако если тест кейсы и их результаты записаны не верно, то сам процесс интеграции сильно осложнится, что станет преградой для команды тестирования при достижении основной цели интеграционного тестирования.
+Big Bang Integration. All or almost all developed modules are combined together as a complete system or its main part, and then integration testing is conducted. This approach is very good for saving time. However, if the test cases and their results are not properly documented, the integration process becomes very complicated, which can hinder the testing team from achieving the main goal of integration testing.
 
 
 ## **Configuration Testing**
 *Конфигурационное тестирование (configuration testing)* - тестирование, направленное на проверку работы ПО при различных конфигурациях системы (заявленных платформах, поддерживаемых драйверах, при различных конфигурациях компьютеров и системного ПО и т.д.).
-
+Configuration Testing - testing aimed at verifying the operation of software under various system configurations (specified platforms, supported drivers, different computer configurations, system software, etc.).
 
 ## **Exploratory Testing**
 *Исследовательское тестирование (exploratory testing)* - неформальный метод, при котором тестировщик активно контролирует проектирование тестов, в то время как эти тесты выполняются, и использует полученную информацию для проектирования новых улучшенных тестов. Такое тестирование определяется как одновременное обучение, проектирование теста и его исполнение.
